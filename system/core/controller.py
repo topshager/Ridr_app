@@ -46,4 +46,4 @@ class Controller(View):
         model = getattr(importlib.import_module('app.models.'+model_name), model_name)
         self.models[model_name] = model()
 
-__all__ = ['Controller', 'request', 'session', 'redirect', 'flash', 'jsonify','requests', 'urlencode']
+__all__ = ['Controller', 'request', 'session', 'redirect', 'flash', 'jsonify','requests', 'urlencode']#setting exactly what should be accebible when this module is called 
